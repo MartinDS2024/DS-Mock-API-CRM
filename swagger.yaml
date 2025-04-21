@@ -6,6 +6,8 @@ info:
 
 servers:
   - url: http://localhost:3000
+    - url: https://ds-mock-api-crm.onrender.com
+    description: Live Render Deployment
 
 paths:
 
