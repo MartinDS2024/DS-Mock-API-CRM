@@ -1,0 +1,150 @@
+info:
+  title: Mock API
+  version: 1.0.0
+openapi: 3.0.0
+paths:
+  /Memo:
+    get:
+      parameters:
+      - in: query
+        name: DebtID
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      summary: Get memos by DebtID
+  /api/Account:
+    get:
+      parameters:
+      - in: query
+        name: DebtID
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      summary: Get account by DebtID
+  /api/BreathingSpace:
+    get:
+      parameters:
+      - in: query
+        name: DebtID
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      summary: Get breathing space by DebtID
+  /api/CallBack:
+    get:
+      parameters:
+      - in: query
+        name: DebtID
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      summary: Get callback by DebtID
+  /api/ContactDetails:
+    get:
+      parameters:
+      - in: query
+        name: DebtID
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      summary: Get contact details by DebtID
+  /api/Document:
+    get:
+      parameters:
+      - in: query
+        name: DebtID
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      summary: Get documents by DebtID
+  /api/IncomeExpenditure:
+    get:
+      parameters:
+      - in: query
+        name: DebtID
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      summary: Get income & expenditure by DebtID
+  /api/LinkedAccounts:
+    get:
+      parameters:
+      - in: query
+        name: LinkID
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      summary: Get linked accounts by LinkID
+  /api/PaymentPlan:
+    get:
+      parameters:
+      - in: query
+        name: DebtID
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      summary: Get payment plan by DebtID
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+        required: true
+      responses:
+        '201':
+          description: Created
+      summary: Create or update payment plan
+  /api/Tasks:
+    get:
+      parameters:
+      - in: query
+        name: DebtID
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      summary: Get tasks by DebtID
+  /api/Transaction:
+    get:
+      parameters:
+      - in: query
+        name: DebtID
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+      summary: Get transactions by DebtID
+servers:
+- url: http://localhost:3000

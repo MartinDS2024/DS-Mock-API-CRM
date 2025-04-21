@@ -1,0 +1,54 @@
+{
+  "DebtID": 11112222,
+  "Adults": 0,
+  "Children_16_18": 0,
+  "Children_Under_16": 0,
+  "IncomeData": [
+    {
+      "IncomeDescription": "Your salary",
+      "Amount": 1200.0,
+      "Frequency": "Monthly",
+      "QuestionID": 1
+    },
+    {
+      "IncomeDescription": "Pension",
+      "Amount": 120.0,
+      "Frequency": "Monthly",
+      "QuestionID": 3
+    },
+    {
+      "IncomeDescription": "Universal Credit",
+      "Amount": 230.0,
+      "Frequency": "Monthly",
+      "QuestionID": 4
+    }
+  ],
+  "ExpenditureList": [
+    {
+      "ExpenditureDescription": "Mortgage",
+      "ExpenditureAmount": 720.0,
+      "Frequency": "Monthly",
+      "QuestionID": 26
+    },
+    {
+      "ExpenditureDescription": "Council Tax",
+      "ExpenditureAmount": 120.0,
+      "Frequency": "Monthly",
+      "QuestionID": 34
+    },
+    {
+      "ExpenditureDescription": "Water",
+      "ExpenditureAmount": 40.0,
+      "Frequency": "Monthly",
+      "QuestionID": 39
+    },
+    {
+      "ExpenditureDescription": "Electric",
+      "ExpenditureAmount": 80.0,
+      "Frequency": "Monthly",
+      "QuestionID": 41
+    }
+  ],
+  "CreatedDate": "2025-03-19T12:09:21.4424724+00:00",
+  "ModifiedDate": null
+}

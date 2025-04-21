@@ -1,0 +1,18 @@
+[
+  {
+    "DebtID": 11112222,
+    "Date": "2024-05-27T00:00:00",
+    "Description": "Online payment",
+    "Transactiontype": "Card",
+    "Amount": 10.0,
+    "CreditDebit": "Credit"
+  },
+  {
+    "DebtID": 11112222,
+    "Date": "2024-04-27T00:00:00",
+    "Description": "Direct Debit",
+    "Transactiontype": "DirectDebit",
+    "Amount": 10.0,
+    "CreditDebit": "Credit"
+  }
+]

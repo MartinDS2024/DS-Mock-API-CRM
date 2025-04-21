@@ -1,0 +1,140 @@
+{
+  "accounts": {
+    "11112222": {
+      "DebtID": 11112222,
+      "Balance": 930.0,
+      "Productname": "Loan",
+      "Clientname": "Green Finance"
+    },
+    "22223333": {
+      "DebtID": 22223333,
+      "Balance": 1450.0,
+      "Productname": "Credit Card",
+      "Clientname": "Blue Card Co"
+    },
+    "33334444": {
+      "DebtID": 33334444,
+      "Balance": 178.2,
+      "Productname": "Electricity",
+      "Clientname": "PowerGrid"
+    },
+    "44445555": {
+      "DebtID": 44445555,
+      "Balance": 8960.0,
+      "Productname": "Auto Loan",
+      "Clientname": "AutoFinance"
+    },
+    "55556666": {
+      "DebtID": 55556666,
+      "Balance": 0.0,
+      "Productname": "None",
+      "Clientname": "TestCo"
+    }
+  },
+  "documents": {
+    "11112222": [
+      {
+        "DocumentID": 1,
+        "FileName": "Proofofpayment.pdf"
+      }
+    ],
+    "22223333": [
+      {
+        "DocumentID": 2,
+        "FileName": "CreditCardStatement.pdf"
+      }
+    ]
+  },
+  "contactDetails": {
+    "11112222": {
+      "Email": "user1@test.com"
+    },
+    "22223333": {
+      "Email": "user2@test.com"
+    }
+  },
+  "memos": {
+    "11112222": [
+      {
+        "Note": "Customer logged in"
+      }
+    ]
+  },
+  "paymentPlans": {
+    "11112222": {
+      "DebtID": 11112222,
+      "Amount": 18.0,
+      "PlanType": "Arrangement",
+      "Frequency": "Monthly"
+    }
+  },
+  "linkedAccounts": {
+    "LINK123": [
+      {
+        "DebtID": 11112222,
+        "Status": "In plan",
+        "Balance": 930.0
+      },
+      {
+        "DebtID": 22223333,
+        "Status": "Open",
+        "Balance": 1450.0
+      }
+    ]
+  },
+  "transactions": {
+    "11112222": [
+      {
+        "Date": "2024-05-27",
+        "Amount": 10.0,
+        "Description": "Online Payment"
+      },
+      {
+        "Date": "2024-04-27",
+        "Amount": 10.0,
+        "Description": "Direct Debit"
+      }
+    ]
+  },
+  "breathingSpaces": {
+    "11112222": {
+      "DebtID": 11112222,
+      "BreathingSpaceAllowed": true,
+      "Reason": "Low income"
+    }
+  },
+  "callbacks": {
+    "11112222": {
+      "DebtID": 11112222,
+      "Callbackdate": "2025-04-02",
+      "Numbertocall": "07496777999"
+    }
+  },
+  "tasks": {
+    "11112222": [
+      {
+        "TaskType": "Dispute",
+        "TaskDetail": "Already paid"
+      }
+    ]
+  },
+  "incomeExpenditure": {
+    "11112222": {
+      "DebtID": 11112222,
+      "IncomeList": [
+        {
+          "IncomeDescription": "Salary",
+          "Amount": 1200,
+          "Frequency": "Monthly"
+        }
+      ],
+      "ExpenditureList": [
+        {
+          "ExpenditureDescription": "Rent",
+          "ExpenditureAmount": 700,
+          "Frequency": "Monthly"
+        }
+      ]
+    }
+  }
+}

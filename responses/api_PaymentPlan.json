@@ -1,0 +1,20 @@
+{
+  "DebtID": 11112222,
+  "ArrangementID": 66677,
+  "Amount": 18.0,
+  "SettlementAmount": 0.0,
+  "Frequency": "Monthly",
+  "PlanType": "Arrangement",
+  "SetupDate": "2025-01-27T00:00:00",
+  "StartDate": "2025-02-28T00:00:00",
+  "LastPaymentDate": "2027-09-28T00:00:00",
+  "LastPaymentAmount": 1.85,
+  "PlanInstallmentDate": "2025-02-28T00:00:00",
+  "NumberOfPayments": 77,
+  "NumberOfPaymentsMadeOnPlan": 0,
+  "PaymentType": "Direct Debit",
+  "FailedPlanFlag": false,
+  "FirstInstallmentMade": false,
+  "FailedPlanDate": "",
+  "ReviewDate": null
+}

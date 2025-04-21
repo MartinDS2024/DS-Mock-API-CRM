@@ -1,0 +1,541 @@
+{
+  "accounts": {
+    "11112222": {
+      "DebtID": 11112222,
+      "Balance": 930.0,
+      "Clientname": "Green Finance",
+      "Clientcode": "GRE001",
+      "Clientreference": "15666666666666",
+      "Productname": "Loan",
+      "Productdescription": "Loan for a car",
+      "DateofBirth": "1986-05-18T00:00:00",
+      "Forename": "Matt",
+      "Surname": "Smith",
+      "HouseNumber/Name": "11",
+      "Street": "Test Street",
+      "Area/District": "District A",
+      "Town": "Test town",
+      "County": "Testshire",
+      "PostCode": "TE01 2SS",
+      "HomePhone": "01222555444",
+      "MobilePhone": "07777444444",
+      "DiscountSettlementAmount": 840.0,
+      "Status": "Plan in place",
+      "StatusCode": "",
+      "StrategyCode": "In plan strategy",
+      "Closed": false,
+      "Closeddate": null,
+      "LegalFlag": false,
+      "LegalStatus": "",
+      "Lastpaymentamount": 0.0,
+      "Lastpaymentdate": "2024-05-27T00:00:00",
+      "Defaulted": true,
+      "Defaulteddate": "2024-09-07T00:00:00",
+      "Loaddate": "2025-01-13T00:00:00",
+      "ClaimIssuedDate": null,
+      "ClaimServedDate": null,
+      "JudgementDate": null,
+      "DefendedDate": null
+    },
+    "22223333": {
+      "DebtID": 22223333,
+      "Balance": 540.0,
+      "Clientname": "Blue Card Co",
+      "Clientcode": "BLU001",
+      "Clientreference": "CC99887766",
+      "Productname": "Credit Card",
+      "Productdescription": "Visa Credit Line",
+      "DateofBirth": "1990-03-22T00:00:00",
+      "Forename": "Sarah",
+      "Surname": "Jones",
+      "HouseNumber/Name": "12B",
+      "Street": "High Street",
+      "Area/District": "Central",
+      "Town": "Bristol",
+      "County": "Avon",
+      "PostCode": "BR2 8LU",
+      "HomePhone": "01234567890",
+      "MobilePhone": "07777788888",
+      "DiscountSettlementAmount": 480.0,
+      "Status": "Open",
+      "StatusCode": "",
+      "StrategyCode": "Initial contact",
+      "Closed": false,
+      "Closeddate": null,
+      "LegalFlag": false,
+      "LegalStatus": "",
+      "Lastpaymentamount": 20.0,
+      "Lastpaymentdate": "2024-06-10T00:00:00",
+      "Defaulted": false,
+      "Defaulteddate": null,
+      "Loaddate": "2025-01-20T00:00:00",
+      "ClaimIssuedDate": null,
+      "ClaimServedDate": null,
+      "JudgementDate": null,
+      "DefendedDate": null
+    },
+    "33334444": {
+      "DebtID": 33334444,
+      "Balance": 120.5,
+      "Clientname": "EnergyTrust",
+      "Clientcode": "ENG001",
+      "Clientreference": "ENG33445566",
+      "Productname": "Electricity Single Rate",
+      "Productdescription": "Monthly billing",
+      "DateofBirth": "1982-07-12T00:00:00",
+      "Forename": "Luke",
+      "Surname": "Williams",
+      "HouseNumber/Name": "33A",
+      "Street": "Elm Drive",
+      "Area/District": "West",
+      "Town": "Nottingham",
+      "County": "Notts",
+      "PostCode": "NG4 2SS",
+      "HomePhone": "",
+      "MobilePhone": "07799001122",
+      "DiscountSettlementAmount": 100.0,
+      "Status": "Plan in place",
+      "StatusCode": "",
+      "StrategyCode": "Payment reminder",
+      "Closed": false,
+      "Closeddate": null,
+      "LegalFlag": true,
+      "LegalStatus": "Pending court action",
+      "Lastpaymentamount": 10.5,
+      "Lastpaymentdate": "2024-06-15T00:00:00",
+      "Defaulted": true,
+      "Defaulteddate": "2024-05-15T00:00:00",
+      "Loaddate": "2025-01-22T00:00:00",
+      "ClaimIssuedDate": "2025-02-01T00:00:00",
+      "ClaimServedDate": "2025-02-03T00:00:00",
+      "JudgementDate": null,
+      "DefendedDate": null
+    },
+    "44445555": {
+      "DebtID": 44445555,
+      "Balance": 0.0,
+      "Clientname": "WaterCo",
+      "Clientcode": "WAT123",
+      "Clientreference": "WAT11122233",
+      "Productname": "Water",
+      "Productdescription": "Quarterly charge",
+      "DateofBirth": "1975-11-30T00:00:00",
+      "Forename": "Anne",
+      "Surname": "Green",
+      "HouseNumber/Name": "9",
+      "Street": "Riverside",
+      "Area/District": "Old Town",
+      "Town": "Leeds",
+      "County": "West Yorkshire",
+      "PostCode": "LS1 1AA",
+      "HomePhone": "0113445566",
+      "MobilePhone": "",
+      "DiscountSettlementAmount": 0.0,
+      "Status": "Closed",
+      "StatusCode": "",
+      "StrategyCode": "None",
+      "Closed": true,
+      "Closeddate": "2025-03-01T00:00:00",
+      "LegalFlag": false,
+      "LegalStatus": "",
+      "Lastpaymentamount": 60.0,
+      "Lastpaymentdate": "2025-02-28T00:00:00",
+      "Defaulted": false,
+      "Defaulteddate": null,
+      "Loaddate": "2024-12-01T00:00:00",
+      "ClaimIssuedDate": null,
+      "ClaimServedDate": null,
+      "JudgementDate": null,
+      "DefendedDate": null
+    }
+  },
+  "documents": {
+    "11112222": [
+      {
+        "DocumentID": 1,
+        "DebtID": 11112222,
+        "Description": "Proof of payment",
+        "DateOfDocument": "2024-10-14T12:36:04.757",
+        "FileName": "Proofofpayment.pdf",
+        "CreatedBy": "DebtStream",
+        "Extension": ".PDF",
+        "File": "base64stringhere"
+      }
+    ],
+    "22223333": [],
+    "33334444": [
+      {
+        "DocumentID": 3,
+        "DebtID": 33334444,
+        "Description": "Electricity Bill - Jan",
+        "DateOfDocument": "2025-01-10T12:00:00",
+        "FileName": "energybill_jan.pdf",
+        "CreatedBy": "EnergyTrust",
+        "Extension": ".PDF",
+        "File": "base64doccontent"
+      },
+      {
+        "DocumentID": 4,
+        "DebtID": 33334444,
+        "Description": "Electricity Bill - Feb",
+        "DateOfDocument": "2025-02-10T12:00:00",
+        "FileName": "energybill_feb.pdf",
+        "CreatedBy": "EnergyTrust",
+        "Extension": ".PDF",
+        "File": "base64doccontent"
+      }
+    ],
+    "44445555": []
+  },
+  "contactDetails": {
+    "11112222": {
+      "DebtID": 11112222,
+      "HouseNumber/Name": "11",
+      "Street": "Test Street",
+      "Area/District": "District A",
+      "Town": "Test town",
+      "County": "Testshire",
+      "PostCode": "TE01 2SS",
+      "HomePhone": "01222555444",
+      "MobilePhone": "07777444444",
+      "Email": "test@test.co.uk",
+      "IsPrimary": true
+    },
+    "22223333": {
+      "DebtID": 22223333,
+      "HouseNumber/Name": "12B",
+      "Street": "High Street",
+      "Area/District": "Central",
+      "Town": "Bristol",
+      "County": "Avon",
+      "PostCode": "BR2 8LU",
+      "HomePhone": "01234567890",
+      "MobilePhone": "07777788888",
+      "Email": "sarah.jones@bluecard.com",
+      "IsPrimary": true
+    },
+    "33334444": {
+      "DebtID": 33334444,
+      "HouseNumber/Name": "33A",
+      "Street": "Elm Drive",
+      "Area/District": "West",
+      "Town": "Nottingham",
+      "County": "Notts",
+      "PostCode": "NG4 2SS",
+      "HomePhone": "",
+      "MobilePhone": "07799001122",
+      "Email": "luke@example.com",
+      "IsPrimary": true
+    },
+    "44445555": {}
+  },
+  "memos": {
+    "11112222": [
+      {
+        "DebtID": 11112222,
+        "Note": "The customer logged in online",
+        "NoteDate": "2025-02-06T14:04:00",
+        "NoteSource": "DebtStream"
+      }
+    ],
+    "22223333": [
+      {
+        "DebtID": 22223333,
+        "Note": "Customer requested statement",
+        "NoteDate": "2025-01-15T09:15:00",
+        "NoteSource": "Agent"
+      },
+      {
+        "DebtID": 22223333,
+        "Note": "Spoke with customer, agreed to email docs",
+        "NoteDate": "2025-01-17T11:30:00",
+        "NoteSource": "Call Centre"
+      }
+    ],
+    "33334444": [],
+    "44445555": []
+  },
+  "paymentPlans": {
+    "11112222": {
+      "DebtID": 11112222,
+      "ArrangementID": 66677,
+      "Amount": 18.0,
+      "SettlementAmount": 0.0,
+      "Frequency": "Monthly",
+      "PlanType": "Arrangement",
+      "SetupDate": "2025-01-27T00:00:00",
+      "StartDate": "2025-02-28T00:00:00",
+      "LastPaymentDate": "2027-09-28T00:00:00",
+      "LastPaymentAmount": 1.85,
+      "PlanInstallmentDate": "2025-02-28T00:00:00",
+      "NumberOfPayments": 77,
+      "NumberOfPaymentsMadeOnPlan": 0,
+      "PaymentType": "Direct Debit",
+      "FailedPlanFlag": false,
+      "FirstInstallmentMade": false,
+      "FailedPlanDate": "",
+      "ReviewDate": null
+    },
+    "22223333": {
+      "DebtID": 22223333,
+      "ArrangementID": 88775,
+      "Amount": 50.0,
+      "SettlementAmount": 0.0,
+      "Frequency": "Weekly",
+      "PlanType": "Arrangement",
+      "SetupDate": "2025-02-01T00:00:00",
+      "StartDate": "2025-02-08T00:00:00",
+      "LastPaymentDate": null,
+      "LastPaymentAmount": 0.0,
+      "PlanInstallmentDate": "2025-02-08T00:00:00",
+      "NumberOfPayments": 12,
+      "NumberOfPaymentsMadeOnPlan": 0,
+      "PaymentType": "Card",
+      "FailedPlanFlag": false,
+      "FirstInstallmentMade": false,
+      "FailedPlanDate": "",
+      "ReviewDate": null
+    }
+  },
+  "linkedAccounts": {
+    "LINK123": [
+      {
+        "DebtID": 11112222,
+        "Status": "Plan in place",
+        "Balance": 930.0,
+        "Productname": "Loan",
+        "Clientname": "Green Finance",
+        "ClientID": "GRE001",
+        "ClientReference": "15666666666666"
+      },
+      {
+        "DebtID": 22223333,
+        "Status": "Open",
+        "Balance": 540.0,
+        "Productname": "Credit Card",
+        "Clientname": "Blue Card Co",
+        "ClientID": "BLU001",
+        "ClientReference": "CC99887766"
+      }
+    ],
+    "LINK456": [
+      {
+        "DebtID": 33334444,
+        "Status": "Plan in place",
+        "Balance": 120.5,
+        "Productname": "Electricity Single Rate",
+        "Clientname": "EnergyTrust",
+        "ClientID": "ENG001",
+        "ClientReference": "ENG33445566"
+      }
+    ]
+  },
+  "transactions": {
+    "11112222": [
+      {
+        "DebtID": 11112222,
+        "Date": "2024-05-27T00:00:00",
+        "Description": "Online payment",
+        "Transactiontype": "Card",
+        "Amount": 10.0,
+        "CreditDebit": "Credit"
+      },
+      {
+        "DebtID": 11112222,
+        "Date": "2024-04-27T00:00:00",
+        "Description": "Direct Debit",
+        "Transactiontype": "DirectDebit",
+        "Amount": 10.0,
+        "CreditDebit": "Credit"
+      }
+    ],
+    "22223333": [
+      {
+        "DebtID": 22223333,
+        "Date": "2024-06-10T00:00:00",
+        "Description": "Visa payment",
+        "Transactiontype": "Card",
+        "Amount": 20.0,
+        "CreditDebit": "Credit"
+      }
+    ],
+    "33334444": [
+      {
+        "DebtID": 33334444,
+        "Date": "2024-06-15T00:00:00",
+        "Description": "Electricity bill payment",
+        "Transactiontype": "BankTransfer",
+        "Amount": 10.5,
+        "CreditDebit": "Credit"
+      }
+    ]
+  },
+  "breathingSpaces": {
+    "11112222": {
+      "DebtID": 11112222,
+      "Onexistingbreathingspace": true,
+      "Datebreathingspaceexpires": "2025-04-26T00:00:00",
+      "Reasonforbreathingspace": "Low disposable income",
+      "BreathingSpaceAllowed": true
+    }
+  },
+  "callbacks": {
+    "11112222": {
+      "DebtID": 11112222,
+      "Callbackdate": "2025-02-26T00:00:00",
+      "Callbacktime": "10:00:00",
+      "Numbertocall": "07822333444",
+      "Createdby": "Portal",
+      "Reasonforcallback": "Call Back: - 07822333444, Reason for call: Make a payment"
+    },
+    "22223333": {
+      "DebtID": 22223333,
+      "Callbackdate": "2025-03-10T00:00:00",
+      "Callbacktime": "Afternoon",
+      "Numbertocall": "07123456789",
+      "Createdby": "Agent",
+      "Reasonforcallback": "Customer needs explanation of plan terms"
+    },
+    "33334444": {
+      "DebtID": 33334444,
+      "Callbackdate": "2025-04-05T00:00:00",
+      "Callbacktime": "Morning",
+      "Numbertocall": "07788990011",
+      "Createdby": "Litigation",
+      "Reasonforcallback": "Discuss pending court action"
+    }
+  },
+  "tasks": {
+    "11112222": [
+      {
+        "DebtID": 11112222,
+        "TaskCreatedDate": "2025-02-26T00:00:00",
+        "TaskType": "Dispute",
+        "TaskDetail": "I have already paid part of this balance",
+        "TaskDateData": "2025-02-12",
+        "Numbertocall": "07822333444",
+        "Emailtocontact": "test@test.co.uk",
+        "Createdby": "Portal",
+        "Reasonforcallback": "Call Back: - 07822333444, Reason for call: Make a payment"
+      }
+    ],
+    "22223333": [
+      {
+        "DebtID": 22223333,
+        "TaskCreatedDate": "2025-03-15T00:00:00",
+        "TaskType": "General Enquiry",
+        "TaskDetail": "Request for balance breakdown",
+        "TaskDateData": "2025-03-10",
+        "Numbertocall": "07123456789",
+        "Emailtocontact": "sarah@example.com",
+        "Createdby": "Agent",
+        "Reasonforcallback": "Requested document explanation"
+      }
+    ],
+    "33334444": [
+      {
+        "DebtID": 33334444,
+        "TaskCreatedDate": "2025-04-01T00:00:00",
+        "TaskType": "Legal Review",
+        "TaskDetail": "Pending legal status check",
+        "TaskDateData": "2025-04-01",
+        "Numbertocall": "07788990011",
+        "Emailtocontact": "luke@example.com",
+        "Createdby": "Litigation",
+        "Reasonforcallback": "Confirm hearing details"
+      }
+    ]
+  },
+  "incomeExpenditure": {
+    "11112222": {
+      "DebtID": 11112222,
+      "Adults": 2,
+      "Children_16_18": 1,
+      "Children_Under_16": 1,
+      "IncomeList": [
+        {
+          "IncomeDescription": "Your salary",
+          "Amount": 1200.0,
+          "Frequency": "Monthly",
+          "QuestionID": 1
+        },
+        {
+          "IncomeDescription": "Universal Credit",
+          "Amount": 230.0,
+          "Frequency": "Monthly",
+          "QuestionID": 4
+        }
+      ],
+      "ExpenditureList": [
+        {
+          "ExpenditureDescription": "Mortgage",
+          "ExpenditureAmount": 720.0,
+          "Frequency": "Monthly",
+          "QuestionID": 26
+        },
+        {
+          "ExpenditureDescription": "Electric",
+          "ExpenditureAmount": 80.0,
+          "Frequency": "Monthly",
+          "QuestionID": 41
+        }
+      ],
+      "CreatedDate": "2025-03-19T12:09:21.4424724+00:00",
+      "ModifiedDate": null
+    },
+    "22223333": {
+      "DebtID": 22223333,
+      "Adults": 1,
+      "Children_16_18": 0,
+      "Children_Under_16": 2,
+      "IncomeList": [
+        {
+          "IncomeDescription": "Employment",
+          "Amount": 950.0,
+          "Frequency": "Monthly",
+          "QuestionID": 1
+        }
+      ],
+      "ExpenditureList": [
+        {
+          "ExpenditureDescription": "Rent",
+          "ExpenditureAmount": 620.0,
+          "Frequency": "Monthly",
+          "QuestionID": 27
+        },
+        {
+          "ExpenditureDescription": "Childcare",
+          "ExpenditureAmount": 150.0,
+          "Frequency": "Monthly",
+          "QuestionID": 32
+        }
+      ],
+      "CreatedDate": "2025-03-25T10:18:00Z",
+      "ModifiedDate": null
+    },
+    "33334444": {
+      "DebtID": 33334444,
+      "Adults": 1,
+      "Children_16_18": 0,
+      "Children_Under_16": 0,
+      "IncomeList": [
+        {
+          "IncomeDescription": "Disability Benefits",
+          "Amount": 400.0,
+          "Frequency": "Monthly",
+          "QuestionID": 5
+        }
+      ],
+      "ExpenditureList": [
+        {
+          "ExpenditureDescription": "Utilities",
+          "ExpenditureAmount": 90.0,
+          "Frequency": "Monthly",
+          "QuestionID": 39
+        }
+      ],
+      "CreatedDate": "2025-03-27T08:45:00Z",
+      "ModifiedDate": null
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "DebtID": 11112222,
+    "Note": "The logged in online",
+    "NoteDate": "2025-02-06T14:04:00",
+    "NoteSource": "DebtStream"
+  },
+  {
+    "DebtID": 11112222,
+    "Note": "The customer registered online",
+    "NoteDate": "2025-01-06T14:04:00",
+    "NoteSource": "DebtStream"
+  }
+]

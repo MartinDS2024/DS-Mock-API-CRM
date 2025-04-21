@@ -1,0 +1,387 @@
+openapi: 3.0.0
+info:
+  title: Mock API
+  version: 1.0.0
+  description: Mock API for simulating GET and POST endpoints with dynamic in-memory data
+
+servers:
+  - url: http://localhost:3000
+
+paths:
+
+  /api/Account:
+    get:
+      summary: Get Account information by DebtID
+      parameters:
+        - name: DebtID
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Account details returned
+        '404':
+          description: Account not found
+
+  /api/LinkedAccounts:
+    get:
+      summary: Get Linked Accounts by LinkID
+      parameters:
+        - name: LinkID
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Linked accounts returned
+        '404':
+          description: No linked accounts found
+    post:
+      summary: Link a DebtID to a LinkID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                DebtID:
+                  type: string
+                LinkID:
+                  type: string
+              required: [DebtID, LinkID]
+      responses:
+        '201':
+          description: Linked account created
+
+  /api/Document:
+    get:
+      summary: Get Documents by DebtID
+      parameters:
+        - name: DebtID
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Documents returned
+        '404':
+          description: No documents found
+    post:
+      summary: Add Document for a DebtID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [DebtID, FileName]
+              properties:
+                DebtID:
+                  type: string
+                FileName:
+                  type: string
+      responses:
+        '201':
+          description: Document created
+
+  /api/ContactDetails:
+    get:
+      summary: Get Contact Details by DebtID
+      parameters:
+        - name: DebtID
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Contact details returned
+        '404':
+          description: No contact details found
+    post:
+      summary: Create or update Contact Details for a DebtID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [DebtID]
+              properties:
+                DebtID:
+                  type: string
+                Email:
+                  type: string
+      responses:
+        '201':
+          description: Contact details saved
+
+  /api/Transaction:
+    get:
+      summary: Get Transactions by DebtID
+      parameters:
+        - name: DebtID
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Transactions returned
+        '404':
+          description: No transactions found
+
+  /api/Payment:
+    post:
+      summary: Create Payment for DebtID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [DebtID, Amount]
+              properties:
+                DebtID:
+                  type: string
+                Amount:
+                  type: number
+                PaymentDate:
+                  type: string
+                PaymentReference:
+                  type: string
+      responses:
+        '201':
+          description: Payment processed
+
+  /api/PaymentPlan:
+    get:
+      summary: Get Payment Plan by DebtID
+      parameters:
+        - name: DebtID
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Payment plan returned
+        '404':
+          description: No plan found
+    post:
+      summary: Add or Replace Payment Plan for a DebtID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [DebtID]
+              properties:
+                DebtID:
+                  type: string
+                Amount:
+                  type: number
+      responses:
+        '201':
+          description: Payment plan created or replaced
+
+  /api/BreathingSpace:
+    get:
+      summary: Get Breathing Space data by DebtID
+      parameters:
+        - name: DebtID
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Breathing space returned
+        '404':
+          description: No data found
+    post:
+      summary: Add Breathing Space for a DebtID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [DebtID]
+              properties:
+                DebtID:
+                  type: string
+                Reason:
+                  type: string
+      responses:
+        '201':
+          description: Breathing space saved
+
+  /api/CallBack:
+    get:
+      summary: Get Callback data by DebtID
+      parameters:
+        - name: DebtID
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Callback info returned
+        '404':
+          description: No callback found
+    post:
+      summary: Create Callback request
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [DebtID]
+              properties:
+                DebtID:
+                  type: string
+                Callbackdate:
+                  type: string
+                Numbertocall:
+                  type: string
+      responses:
+        '201':
+          description: Callback created
+
+  /api/Tasks:
+    get:
+      summary: Get Tasks by DebtID
+      parameters:
+        - name: DebtID
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Tasks returned
+        '404':
+          description: No tasks found
+    post:
+      summary: Create Task for DebtID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [DebtID, TaskType]
+              properties:
+                DebtID:
+                  type: string
+                TaskType:
+                  type: string
+                TaskDetail:
+                  type: string
+      responses:
+        '201':
+          description: Task created
+
+  /api/IncomeExpenditure:
+    get:
+      summary: Get Income and Expenditure by DebtID
+      parameters:
+        - name: DebtID
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Income & expenditure data returned
+        '404':
+          description: Not found
+    post:
+      summary: Submit Income and Expenditure for a DebtID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [DebtID]
+              properties:
+                DebtID:
+                  type: string
+                IncomeList:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      IncomeDescription:
+                        type: string
+                      Amount:
+                        type: number
+                      Frequency:
+                        type: string
+      responses:
+        '201':
+          description: Submission saved
+
+  /api/Memo:
+    get:
+      summary: Get Memo by DebtID
+      parameters:
+        - name: DebtID
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Memos returned
+        '404':
+          description: Not found
+    post:
+      summary: Create a Memo for a DebtID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [DebtID, Note]
+              properties:
+                DebtID:
+                  type: string
+                Note:
+                  type: string
+      responses:
+        '201':
+          description: Memo created
+
+  /api/reset:
+    post:
+      summary: Reset the in-memory data or a specific DebtID
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                DebtID:
+                  type: string
+      responses:
+        '200':
+          description: Reset completed
+
+  /api/snapshot:
+    get:
+      summary: View current in-memory state
+      responses:
+        '200':
+          description: Snapshot of current data

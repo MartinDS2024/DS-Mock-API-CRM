@@ -1,0 +1,25 @@
+{
+  "LinkID": "0BB83607-00D7-4B2C-8695-32AD3812B6F4",
+  "noOfAccounts": 2,
+  "isLinked": true,
+  "linkedAccountDetails": [
+    {
+      "DebtID": 2122114,
+      "Status": "Plan in place",
+      "Balance": 111.02,
+      "Productname": "Loan",
+      "Clientname": "Green Finance",
+      "ClientID": "GRE001",
+      "ClientReference": "111126777"
+    },
+    {
+      "DebtID": 2122115,
+      "Status": "Plan in place",
+      "Balance": 318.96,
+      "Productname": "Loan",
+      "Clientname": "Blue Energy",
+      "ClientID": "BLU003",
+      "ClientReference": "78576657"
+    }
+  ]
+}

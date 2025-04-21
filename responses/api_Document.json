@@ -1,0 +1,22 @@
+[
+  {
+    "DocumentID": 1,
+    "DebtID": 11112222,
+    "Description": "Test",
+    "DateOfDocument": "2024-10-14T12:36:04.757",
+    "FileName": "Proofofpayment.pdf",
+    "CreatedBy": "DebtStream",
+    "Extension": ".PDF",
+    "File": "BASE64_PLACEHOLDER"
+  },
+  {
+    "DocumentID": 2,
+    "DebtID": 11112222,
+    "Description": "Test",
+    "DateOfDocument": "2024-09-14T12:36:04.757",
+    "FileName": "AnnualStatement.pdf",
+    "CreatedBy": "System",
+    "Extension": ".PDF",
+    "File": "BASE64_PLACEHOLDER"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "DebtID": 11112222,
+    "HouseNumber/Name": "11",
+    "Street": "Test Street",
+    "District/Area": "District 1",
+    "Town": "Test town",
+    "County": "Testshire",
+    "PostCode": "TE11 9LL",
+    "HomePhone": "01222555444",
+    "MobilePhone": "07777444444",
+    "Email": "test@test.co.uk",
+    "IsPrimary": true
+  }
+]
