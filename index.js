@@ -7,6 +7,9 @@ const cors = require('cors');
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');
 
+// Load dynamic mock data
+let db = require('./mockData.json');
+
 const app = express();
 const port = 3000;
 
@@ -206,8 +209,7 @@ app.post('/api/Memo', (req, res) => res.status(201).json({ status: 'success', da
 
 
 
-// Load dynamic mock data
-let db = require('./mockData.json');
+
 
 // GET Account (dynamic by DebtID)
 app.get('/api/Account', (req, res) => {
