@@ -81,6 +81,7 @@ app.get('/api/LinkedAccounts', (req, res) => {
 
 app.get('/api/Document', (req, res) => {
     const { DebtID } = req.query;
+
     if (DebtID === '11112222') {
         return res.json({
             status: 'success',
@@ -97,36 +98,39 @@ app.get('/api/Document', (req, res) => {
                 }
             ]
         });
-        if (DebtID === '33334444') {
-            return res.json({
-                status: 'success',
-                data: [
-                    {
-                        "DocumentID": 3,
-                        "DebtID": 33334444,
-                        "Description": "Electricity Bill - Jan",
-                        "DateOfDocument": "2025-01-10T12:00:00",
-                        "FileName": "energybill_jan.pdf",
-                        "CreatedBy": "EnergyTrust",
-                        "Extension": ".PDF",
-                        "File": "base64doccontent"
-                    },
-                    {
-                        "DocumentID": 4,
-                        "DebtID": 33334444,
-                        "Description": "Electricity Bill - Feb",
-                        "DateOfDocument": "2025-02-10T12:00:00",
-                        "FileName": "energybill_feb.pdf",
-                        "CreatedBy": "EnergyTrust",
-                        "Extension": ".PDF",
-                        "File": "base64doccontent"
-                    }
-                ]
-            });  
-    } else {
-        return res.status(404).json({ message: 'No documents found' });
     }
+
+    if (DebtID === '33334444') {
+        return res.json({
+            status: 'success',
+            data: [
+                {
+                    DocumentID: 3,
+                    DebtID: 33334444,
+                    Description: "Electricity Bill - Jan",
+                    DateOfDocument: "2025-01-10T12:00:00",
+                    FileName: "energybill_jan.pdf",
+                    CreatedBy: "EnergyTrust",
+                    Extension: ".PDF",
+                    File: "base64doccontent"
+                },
+                {
+                    DocumentID: 4,
+                    DebtID: 33334444,
+                    Description: "Electricity Bill - Feb",
+                    DateOfDocument: "2025-02-10T12:00:00",
+                    FileName: "energybill_feb.pdf",
+                    CreatedBy: "EnergyTrust",
+                    Extension: ".PDF",
+                    File: "base64doccontent"
+                }
+            ]
+        });
+    }
+
+    return res.status(404).json({ message: 'No documents found' });
 });
+
 /*
 app.get('/api/Document', (req, res) => {
     const { DebtID } = req.query;
@@ -134,7 +138,7 @@ app.get('/api/Document', (req, res) => {
     if (data) res.json({ status: 'success', data });
     else res.status(404).json({ message: 'No documents found' });
 });
-/*
+
 
 app.get('/api/Document', (req, res) => {
     const data = JSON.parse(fs.readFileSync(path.join(__dirname, 'responses', 'api_Document.json')));
@@ -143,6 +147,7 @@ app.get('/api/Document', (req, res) => {
 
 app.get('/api/ContactDetails', (req, res) => {
     const { DebtID } = req.query;
+
     if (DebtID === '11112222') {
         return res.json({
             status: 'success',
@@ -160,44 +165,50 @@ app.get('/api/ContactDetails', (req, res) => {
                 IsPrimary: true
             }
         });
-        if (DebtID === '22223333') {
-            return res.json({
-                status: 'success',
-                data: {
-                    "DebtID": 22223333,
-                    "HouseNumber/Name": "12B",
-                    "Street": "High Street",
-                    "Area/District": "Central",
-                    "Town": "Bristol",
-                    "County": "Avon",
-                    "PostCode": "BR2 8LU",
-                    "HomePhone": "01234567890",
-                    "MobilePhone": "07777788888",
-                    "Email": "sarah.jones@bluecard.com",
-                    "IsPrimary": true
-                }
-            });
-            if (DebtID === '11112222') {
-                return res.json({
-                    status: 'success',
-                    data: {
-                        "DebtID": 33334444,
-                        "HouseNumber/Name": "33A",
-                        "Street": "Elm Drive",
-                        "Area/District": "West",
-                        "Town": "Nottingham",
-                        "County": "Notts",
-                        "PostCode": "NG4 2SS",
-                        "HomePhone": "",
-                        "MobilePhone": "07799001122",
-                        "Email": "luke@example.com",
-                        "IsPrimary": true
-                    }
-                });
-    } else {
-        return res.status(404).json({ message: 'No contact details found' });
     }
+
+    if (DebtID === '22223333') {
+        return res.json({
+            status: 'success',
+            data: {
+                DebtID: 22223333,
+                "HouseNumber/Name": "12B",
+                Street: "High Street",
+                "Area/District": "Central",
+                Town: "Bristol",
+                County: "Avon",
+                PostCode: "BR2 8LU",
+                HomePhone: "01234567890",
+                MobilePhone: "07777788888",
+                Email: "sarah.jones@bluecard.com",
+                IsPrimary: true
+            }
+        });
+    }
+
+    if (DebtID === '33334444') {
+        return res.json({
+            status: 'success',
+            data: {
+                DebtID: 33334444,
+                "HouseNumber/Name": "33A",
+                Street: "Elm Drive",
+                "Area/District": "West",
+                Town: "Nottingham",
+                County: "Notts",
+                PostCode: "NG4 2SS",
+                HomePhone: "",
+                MobilePhone: "07799001122",
+                Email: "luke@example.com",
+                IsPrimary: true
+            }
+        });
+    }
+
+    return res.status(404).json({ message: 'No contact details found' });
 });
+
+
 
 /*
 app.get('/api/ContactDetails', (req, res) => {
@@ -207,7 +218,7 @@ app.get('/api/ContactDetails', (req, res) => {
     else res.status(404).json({ message: 'No contact details found' });
 });
 
-/*
+
 app.get('/api/ContactDetails', (req, res) => {
     const data = JSON.parse(fs.readFileSync(path.join(__dirname, 'responses', 'api_ContactDetails.json')));
     res.json({ status: 'success', data });
